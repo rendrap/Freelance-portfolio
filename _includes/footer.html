@@ -1,0 +1,19 @@
+<footer id="footer" style="background: linear-gradient(rgba(214, 255, 238, 0.51), rgba(189, 249, 202, 0.5)), url(../images/{{ site.data.settings.bg-img }}) center top; background-size: cover; background-position: center top">
+  <div class="lockup">
+    <div class="logo">{% include logo.html %}</div>
+
+    <div class="content-wrap">
+      <nav>
+        {% for item in site.data.settings.menu %}
+          <a href="{{ item.url }}">{{ item.name }}</a>
+        {% endfor %}
+       <!--  <a href="#about-me">About Me</a>
+        <a href="#me">Work</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a> -->
+      </nav>
+
+      <p class="copyright">All content copyright 2017</p>
+    </div>
+  </div>
+</footer>

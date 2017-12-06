@@ -1,0 +1,49 @@
+ create README.md
+   create _posts\2016-09-08-welcome-to-jekyll.md
+   create feed.xml
+   create _config.yml
+   create Gemfile
+   create robots.txt
+   create 404.html
+   create .babelrc
+   create .gitignore
+   create package.json
+   create manifest.json
+   create manifest.webapp
+   create LICENSE
+   create _layouts\default.html
+   create _layouts\page.html
+   create _layouts\post.html
+   create _scripts\main.js
+   create images\favicons\apple-touch-icon.png
+   create images\favicons\favicon-16x16.png
+   create images\favicons\favicon-32x32.png
+   create images\favicons\safari-pinned-tab.svg
+   create images\touch\128x128.jpg
+   create images\touch\144x144.jpg
+   create images\touch\152x152.jpg
+   create images\touch\192x192.jpg
+   create images\touch\512x512.jpg
+   create index.html
+   create _includes\footer.html
+   create _includes\head.html
+   create _includes\header.html
+   create _includes-pug\example.pug
+   create scss\_base.scss
+   create scss\_layout.scss
+   create scss\_syntax-highlighting.scss
+   create scss\main.scss
+   create gulpfile.babel.js
+   create .travis.yml
+   create validate\checklog.js
+   create humans.txt
+
+        - Please visit https://travis-ci.org and enable it for this project.
+
+        - Please visit https://dependencyci.com and enable it for this project.
+npm WARN deprecated babel-preset-es2015@6.24.1: ??  Thanks for using Babel: we recommend using babel-preset-env now: please read babeljs.io/env to update!
+npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated express@2.5.11: express 2.x series is deprecated
+npm WARN deprecated connect@1.9.2: connect 1.x series is deprecated
+npm WARN deprecated minimatch@0.2.14: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated graceful-fs@1.2.3: graceful-fs v3.0.0 and before will fail on node releases >= v7.0. Please update to graceful-fs@^4.0.0 as soon as possible. Use 'npm ls graceful-fs' to find it in the tree.

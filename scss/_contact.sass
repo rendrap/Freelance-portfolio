@@ -1,0 +1,56 @@
+.section-contact
+  padding-bottom: 50px
+  text-align: center
+
+.social-links
+  max-width: 700px
+  margin: 0 auto 50px
+  +display(flex)
+  +justify-content(space-around)
+  +flex-wrap(wrap)
+
+  a
+    display: block
+    background: $accent-dark
+    +size(50px)
+    line-height: 50px
+    color: white
+    border-radius: 50%
+    font-size: 28px
+    text-decoration: none
+    +transition()
+    margin: 20px
+
+    &:hover
+      +transform(scale(1.2))
+
+.bar
+  width: 250px
+  height: 0
+  border-top: 4px solid $accent-dark
+  margin: 0 auto 30px
+
+.biglink
+  display: inline-block
+  text-decoration: none
+  color: $accent-dark
+  font:
+    size: 72px
+    weight: 300
+  opacity: 0.6
+
+  &:hover
+    opacity: 1
+
+@media (max-width: 750px)
+  .biglink
+    display: inline-block
+    text-decoration: none
+    color: $accent-dark
+    font:
+      size: 32px
+      weight: 300
+    opacity: 0.6
+
+    &:hover
+      opacity: 1

@@ -1,0 +1,17 @@
+<header id="header" style="background: url(../images/{{ site.data.settings.bg-img }}) center bottom; background-size: cover">
+	<div class="logo"> {% include logo.html %}</div>
+	<nav>
+
+    {% for item in site.data.settings.menu %}
+      <a href="{{ item.url }}">{{ item.name }}</a>
+    {% endfor %}
+
+	<!-- 	<a href="#about-me">About Me</a>
+		<a href="#me">Work</a>
+		<a href="#clients">Clients</a>
+		<a href="#contact">Contact</a> -->
+
+	</nav>
+	<h1><span>{{ site.data.settings.title }}</span></h1>
+	<p class="kicker">{{ site.data.settings.description }}</p>
+</header>

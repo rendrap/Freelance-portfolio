@@ -1,0 +1,56 @@
+h3
+  margin: 0 auto 30px
+
+form
+  max-width: 450px
+  margin: 0 auto 50px
+
+  input, textarea
+    border: 3px solid $accent-dark
+    width: 100%
+    +box-sizing(border-box)
+    padding: 10px
+
+    &:focus
+      outline: none
+      border-color: $accent
+
+  textarea
+    height: 10em
+
+  .submit-wrap
+    text-align: right
+
+  [type="submit"]
+    width: 33%
+    background: $accent-dark
+    color: white
+    font-size: 18px
+    text-transform: uppercase
+
+    &:hover
+      background: $accent
+
+  .contact-info-group
+
+    label
+      width: 50%
+      float: left
+      +box-sizing(border-box)
+
+      &:nth-child(1)
+        padding-right: 10px
+
+      &:nth-child(2)
+        padding-left: 10px
+
+  label
+    display: block
+    margin-bottom: 20px
+
+    span
+      display: block
+
+@media (max-width: 475px)
+  form
+    margin: 0 5px 50px

@@ -1,0 +1,112 @@
+h3
+  @extend %small-bold
+  color: $accent-dark
+  text-align: center
+  padding: 100px 0 30px
+
+.face-lockup
+  max-width: 780px
+  +display(flex)
+  margin: 0 auto
+  +align-items(center)
+  +justify-content(space-between)
+
+
+  .face-img
+    +size(200px)
+    background-position: center center
+    background-size: cover
+    border-radius: 50%
+    +order(3)
+
+  [class^="icon-"]
+    +size(100px)
+    display: inline-flex
+    background: $bgcolor
+    border-radius: 50%
+
+    path
+      fill: $accent-dark
+
+    svg
+      +size(60px)
+      margin: auto
+      transform-origin: 50% 50% 0px
+
+    &.icon-pencil
+      +order(1)
+    &.icon-svg
+      +order(2)
+    &.icon-cog
+      +order(4)
+    &.icon-newspaper
+      +order(5)
+
+@media screen and (max-width: 650px)
+  .face-lockup
+    display: block
+    text-align: center
+
+    div
+      display: inline-block
+
+    .face-img
+      display: block
+      background-position: center center
+      background-repeat: no-repeat
+      width: 200px
+      margin: 0 auto 30px
+
+    [class^="icon-"]
+      margin: 10px
+
+
+.blurb
+  max-width: 620px
+  padding: 0 15px
+  margin: 50px auto
+  font-size: 24px
+  line-height: 1.3em
+  font-weight: 300
+
+.skill-lockup
+  max-width: 490px
+  margin: 100px auto 0px auto
+  color: #777
+  +clearfix
+
+  .skill-unit
+    width: 245px
+    float: left
+
+  .skill-icon
+    font-size: 0
+    margin: 5px 0 30px
+
+    span
+      display: inline-block
+      +size(14px)
+      background-color: $bgcolor
+      margin-right: 5px
+      border-radius: 50%
+
+      &:after
+        content: ""
+        display: block
+        +size(10px)
+        background: #FFF
+        border-radius: 50%
+        margin: 2px
+
+    @for $i from 1 through 10
+      &.skill-#{$i} span:nth-child(-n+#{$i})
+        @extend %skill-color
+
+@media screen and (max-width: 720px)
+  .skill-lockup
+    width: 270px
+
+%skill-color
+  background: $accent-dark
+
+
